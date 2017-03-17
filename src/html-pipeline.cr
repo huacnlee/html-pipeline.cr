@@ -1,5 +1,6 @@
 require "xml"
 require "./html-pipeline/filter"
+require "./html-pipeline/text_filter"
 require "./html-pipeline/*"
 
 module HTML

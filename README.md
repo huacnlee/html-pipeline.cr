@@ -15,6 +15,11 @@ dependencies:
     github: huacnlee/html-pipeline
 ```
 
+## Filters
+
+- MarkdownFilter
+- PlainTextInputFilter - HTML.escape
+
 ## Usage
 
 ```crystal

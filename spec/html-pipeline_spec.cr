@@ -31,7 +31,4 @@ describe HTML::Pipeline do
       new_payload["class"].should eq(default_payload["class"])
     end
   end
-
-  describe "Full test" do
-  end
 end

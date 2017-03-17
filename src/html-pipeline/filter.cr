@@ -12,12 +12,12 @@ module HTML
       @doc : XML::Node
 
       def initialize(doc, context = {"" => ""})
-        if doc.is_a?(String)
-          @html = doc.to_s
-          @doc = parse_html(@html)
-        else
+        if doc.is_a?(XML::Node)
           @html = doc.content
           @doc = doc
+        else
+          @html = doc.to_s
+          @doc = parse_html(@html)
         end
 
         @context = context
