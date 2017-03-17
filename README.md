@@ -17,8 +17,9 @@ dependencies:
 
 ## Filters
 
-- MarkdownFilter
 - PlainTextInputFilter - HTML.escape
+- MarkdownFilter
+- AutolinkFilter - Autolink for any urls.
 
 ## Usage
 
@@ -26,7 +27,9 @@ dependencies:
 require "html-pipeline"
 
 filters = [
-  HTML::Pipeline::MarkdownFilter
+  HTML::Pipeline::PlainTextInputFilter,
+  HTML::Pipeline::MarkdownFilter,
+  HTML::Pipeline::AutolinkFilter,
 ] of HTML::Pipeline::Filter
 pipeline = HTML::Pipeline.new(filters)
 pipeline.to_html("Markdown context")
