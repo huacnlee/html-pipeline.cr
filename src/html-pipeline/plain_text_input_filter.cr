@@ -6,7 +6,7 @@ module HTML
       def call
         io = IO::Memory.new
         HTML.escape(html, io)
-        "<div>#{io.to_s}</div>"
+        io.to_s
       end
     end
   end
