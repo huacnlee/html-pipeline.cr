@@ -1,6 +1,8 @@
 HTML::Pipeline
 ==============
 
+[![Build status](https://travis-ci.org/huacnlee/html-pipeline.svg?branch=master)](https://travis-ci.org/huacnlee/html-pipeline)
+
 HTML processing filters and utilities for Crystal.
 
 This is Crystal implement like [html-pipeline](https://github.com/jch/html-pipeline) in Ruby.
