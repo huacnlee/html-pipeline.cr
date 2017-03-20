@@ -2,6 +2,7 @@ require "remarkdown"
 
 module HTML
   class Pipeline
+    # Auto create link tag for all URLs.
     class AutolinkFilter < Filter
       # https://github.com/tenderlove/rails_autolink/blob/master/lib/rails_autolink/helpers.rb
       AUTO_LINK_RE = %r{
