@@ -32,9 +32,9 @@ filters = [
   HTML::Pipeline::PlainTextInputFilter,
   HTML::Pipeline::MarkdownFilter,
   HTML::Pipeline::AutolinkFilter,
-] of HTML::Pipeline::Filter
+] of HTML::Pipeline::Filter.class
 pipeline = HTML::Pipeline.new(filters)
-pipeline.to_html("Markdown context")
+pipeline.call("Markdown context")
 ```
 
 ## LICENSE
