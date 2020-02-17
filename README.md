@@ -14,7 +14,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   html-pipeline:
-    github: huacnlee/html-pipeline
+    github: huacnlee/html-pipeline.cr
 ```
 
 ## Filters
