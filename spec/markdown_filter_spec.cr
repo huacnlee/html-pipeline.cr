@@ -13,7 +13,7 @@ describe HTML::Pipeline::MarkdownFilter do
 
   pipeline = HTML::Pipeline.new filters
 
-  it "works" do
-    assert_render pipeline, %(# Heading 1\n\nHello **world**), %(<h1 id="heading-1">Heading 1</h1>\n\n<p>Hello <strong>world</strong></p>)
+  describe "works" do
+    assert_render pipeline, %(# Heading 1\n\nHello **world**), %(<h1>Heading 1</h1>\n<p>Hello <strong>world</strong></p>\n)
   end
 end

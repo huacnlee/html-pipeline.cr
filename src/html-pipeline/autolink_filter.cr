@@ -1,5 +1,3 @@
-require "remarkdown"
-
 module HTML
   class Pipeline
     # Auto create link tag for all URLs.

@@ -7,7 +7,7 @@ authors:
 crystal: 0.21.1
 
 dependencies:
-  remarkdown:
-    github: huacnlee/remarkdown
+  markd:
+    github: icyleaf/markd
 
 license: MIT

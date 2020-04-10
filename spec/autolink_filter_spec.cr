@@ -8,13 +8,13 @@ describe HTML::Pipeline::AutolinkFilter do
 
     pipeline = HTML::Pipeline.new filters
 
-    it "http work" do
+    describe "http" do
       assert_render pipeline,
         %(Hello https://github.com/huacnlee/html-pipeline),
         %(Hello <a href="https://github.com/huacnlee/html-pipeline">https://github.com/huacnlee/html-pipeline</a>)
     end
 
-    it "中文 work" do
+    describe "中文" do
       assert_render pipeline,
         %(Hello https://github.com/huacnlee/html-pipeline中文),
         %(Hello <a href="https://github.com/huacnlee/html-pipeline中文">https://github.com/huacnlee/html-pipeline中文</a>)

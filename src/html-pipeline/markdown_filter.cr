@@ -1,4 +1,4 @@
-require "remarkdown"
+require "markd"
 
 module HTML
   class Pipeline
@@ -7,7 +7,7 @@ module HTML
     # https://github.com/huacnlee/remarkdown
     class MarkdownFilter < Filter
       def call
-        @html = Remarkdown.to_html(html)
+        @html = Markd.to_html(html)
       end
     end
   end
