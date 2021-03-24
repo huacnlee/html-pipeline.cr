@@ -4,8 +4,6 @@ version: 0.2.0
 authors:
   - Jason Lee <huacnlee@gmail.com>
 
-crystal: 0.21.1
-
 dependencies:
   markd:
     github: icyleaf/markd
