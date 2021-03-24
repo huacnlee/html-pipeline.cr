@@ -1,7 +1,6 @@
-HTML::Pipeline
-==============
+# HTML::Pipeline
 
-[![Build status](https://travis-ci.org/huacnlee/html-pipeline.svg?branch=master)](https://travis-ci.org/huacnlee/html-pipeline)
+[![Build status](https://travis-ci.org/huacnlee/html-pipeline.cr.svg?branch=master)](https://travis-ci.org/huacnlee/html-pipeline.cr)
 
 HTML processing filters and utilities for Crystal.
 
